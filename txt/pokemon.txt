@@ -1,0 +1,7 @@
+3
+1 Entei Feu 9
+2 Groudon Sol 5
+3 Palkia Eau 5
+4 Pikachu Electrique 5
+5 Roucool Normal 5
+6 Chenipan Insecte 5

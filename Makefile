@@ -1,0 +1,28 @@
+OBJECTS = main.o carte.o pokemon.o liste.o combat.o file.o
+
+all: $(OBJECTS)
+	gcc -Wall obj/main.o obj/carte.o obj/pokemon.o obj/liste.o obj/file.o obj/combat.o -o bin/pokemon
+
+main.o: source/main.c
+	gcc -Wall -c source/main.c -I header -o obj/main.o
+
+carte.o: source/carte.c
+	gcc -Wall -c source/carte.c -I header -o obj/carte.o
+
+pokemon.o: source/pokemon.c
+	gcc -Wall -c source/pokemon.c -I header -o obj/pokemon.o
+
+liste.o: source/liste.c
+	gcc -Wall -c source/liste.c -I header -o obj/liste.o
+
+combat.o: source/combat.c
+	gcc -Wall -c source/combat.c -I header -o obj/combat.o
+
+file.o: source/file.c
+	gcc -Wall -c source/file.c -I header -o obj/file.o
+
+exe:
+	./bin/pokemon
+
+clean:
+	rm obj/*.o

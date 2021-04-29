@@ -1,0 +1,14 @@
+#ifndef COMBAT_H
+#define COMBAT_H
+
+#include "file.h"
+#include <stdio.h>
+
+int estPokemon(map *m, player *j,char c);
+void ask(player *j, Pokemon * sauvage);
+void attaque(player *j,Pokemon *sauvage);
+void changerdepokemon(player *j, Pokemon *sauvage);
+void fuir();
+
+
+#endif
